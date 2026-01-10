@@ -33,4 +33,4 @@ RUN if [ ! -d "$STM32IDE_DIR" ]; then \
     exit 1; \
 fi
 
-CMD ["bash"]
+CMD ["/bin/bash"]
