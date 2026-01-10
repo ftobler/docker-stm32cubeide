@@ -26,7 +26,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 ENV STM32IDE_DIR="/opt/st/stm32cubeide_2.0.0"
-ENV PATH="${STM32IDE_DIR}"
+ENV PATH="${PATH}:${STM32IDE_DIR}"
 
 RUN if [ ! -d "$STM32IDE_DIR" ]; then \
     echo "Error: $STM32IDE_DIR is missing! The installation failed."; \
