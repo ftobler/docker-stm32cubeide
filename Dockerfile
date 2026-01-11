@@ -2,6 +2,7 @@ FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV LICENSE_ALREADY_ACCEPTED=1
+ENV PIP_ROOT_USER_ACTION=ignore
 
 RUN apt-get update \
     && apt-get install unzip wget -y \
